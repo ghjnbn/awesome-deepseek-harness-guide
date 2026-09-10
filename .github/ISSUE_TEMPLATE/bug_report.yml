@@ -1,0 +1,41 @@
+name: 问题报告
+description: 照着教程做，命令跑不通或报错
+title: "[问题] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请提供足够信息，帮助复现问题。
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: 发生了什么
+      description: 你做了什么操作？期望什么结果？实际看到什么？
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: 报错原文
+      description: 把终端里完整的报错信息粘贴进来
+      render: shell
+  - type: input
+    id: node_version
+    attributes:
+      label: Node 版本
+      description: 运行 `node -v` 查看
+      placeholder: "v22.19.0"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统
+      placeholder: "Windows 11 / macOS 14 / Ubuntu 22.04"
+  - type: input
+    id: dsh_version
+    attributes:
+      label: dsh 版本（如已知）
+      description: 运行 `dsh --version` 查看
+      placeholder: "0.1.0-rc.7"

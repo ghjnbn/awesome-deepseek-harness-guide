@@ -1,0 +1,35 @@
+name: 内容建议 / 勘误
+description: 文档有错误、过时，或希望新增某个主题
+title: "[内容] "
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈！请尽量具体，方便我们快速定位和修复。
+  - type: input
+    id: location
+    attributes:
+      label: 涉及的文档
+      description: 例如 docs/getting-started/01-installation.md，或填写 README
+      placeholder: 文档路径或标题
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 问题或建议
+      description: 哪里错了 / 过时了 / 缺了什么？期望怎么改？
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 你使用的 dsh 版本（如已知）
+      description: 可运行 `dsh --version` 查看
+      placeholder: "0.1.0-rc.7"
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统
+      placeholder: "Windows 11 / macOS 14 / Ubuntu 22.04"
