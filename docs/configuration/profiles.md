@@ -19,7 +19,7 @@
 
 每个 profile 是一个目录，核心文件是 `package.json` 和 Cordis 配置：
 
-```
+```text
 profiles/
   web/
     package.json        # 声明这个 profile 用哪些 bundle

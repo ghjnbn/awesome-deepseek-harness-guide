@@ -6,7 +6,7 @@
 
 个人设置文件在：
 
-```
+```text
 ~/.dsh/settings.yaml      # 即 $DSH_HOME/settings.yaml
 ```
 

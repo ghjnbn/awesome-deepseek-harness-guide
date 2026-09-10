@@ -39,7 +39,7 @@ set DEEPSEEK_API_KEY=sk-xxx
 
 在项目根目录放一个 `.env` 文件：
 
-```
+```text
 DEEPSEEK_API_KEY=sk-xxx
 ```
 
